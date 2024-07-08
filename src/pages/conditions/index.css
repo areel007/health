@@ -1,0 +1,35 @@
+.conditions__we__treat__page__hero {
+  background-image: url("../../assets/conditions-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-image: linear-gradient(hsl(240 100% 50% / 0.3), hsl(0 100% 50% / 0.3))
+    fill 1;
+}
+
+.conditions__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .conditions__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conditions__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .conditions__grid {
+    grid-template-columns: 1fr;
+  }
+}

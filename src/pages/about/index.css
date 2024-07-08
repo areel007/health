@@ -1,0 +1,43 @@
+.who__we__are__page__hero {
+  background-image: url("../../assets/about-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-image: linear-gradient(hsl(240 100% 50% / 0.3), hsl(0 100% 50% / 0.3))
+    fill 1;
+}
+
+.parallax__about {
+  height: 400px;
+  width: 100%;
+  background: url(../../assets/parallax-image-1.jpg) no-repeat center center
+    fixed;
+  /* background-position: top; */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  position: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax__about:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-color: black; */
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax__about {
+    height: 250px;
+
+    background-image: url(../../assets/parallax-image-1.jpg);
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}

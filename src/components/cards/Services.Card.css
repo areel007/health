@@ -1,0 +1,55 @@
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: #db3b78;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card:hover::before {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    height: 378px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    height: 313px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    height: 268px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    height: 223px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    height: 198px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    height: 178px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    height: 167px !important;
+  }
+}

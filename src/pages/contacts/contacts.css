@@ -1,0 +1,9 @@
+.contacts__page__hero {
+  background-image: url("../../assets/contacts.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-image: linear-gradient(hsl(240 100% 50% / 0.3), hsl(0 100% 50% / 0.3))
+    fill 1;
+}
